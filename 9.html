@@ -197,11 +197,11 @@ body {
   // Add an event listener to the search button
   searchButton.addEventListener("click", function() {
     // Get the value of the search input
-    filterSearch(searchInput.value.toLowerCase());
-  });
-  searchInput.addEventListener("input", function() {
     let searchValue = searchInput.value.toLowerCase();
     filterSearch(searchValue);
+  });
+  searchInput.addEventListener("input", function() {
+    filterSearch(searchInput.value.toLowerCase());
 });
 </script>
 
