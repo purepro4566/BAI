@@ -1,0 +1,112 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, black, white, lime, aqua, blue, magenta);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-box {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+.search-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  background: white;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  transform: scale(1.1);
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.game-card {
+  width: 200px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.game-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.game-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+}
+
+.game-description {
+  font-size: 16px;
+  color: gray;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="search-container">
+  <input type="text" class="search-box" placeholder="Search for mobile games...">
+  <button class="search-button">🔍</button>
+</div>
+
+<div class="game-container">
+  <div class="game-card">
+    <img src="https://raw.githubusercontent.com/PurePro4561/PurePro4561.github.io/main/A86A7867-D2CF-4C2C-AF7C-AF1218BE5D78.jpeg" class="game-image">
+    <div class="game-title">Game 1</div>
+    <div class="game-description">A fun and addictive game for everyone.</div>
+  </div>
+  <div class="game-card">
+    <img src="https://raw.githubusercontent.com/PurePro4561/PurePro4561.github.io/main/A86A7867-D2CF-4C2C-AF7C-AF1218BE5D78.jpeg" class="game-image">
+    <div class="game-title">Game 2</div>
+    <div class="game-description">A challenging and rewarding game for the brave.</div>
+  </div>
+  <div class="game-card">
+    <img src="https://raw.githubusercontent.com/PurePro4561/PurePro4561.github.io/main/A86A7867-D2CF-4C2C-AF7C-AF1218BE5D78.jpeg" class="game-image">
+    <div class="game-title">Game 3</div>
+    <div class="game-description">A relaxing and soothing game for the stressed.</div>
+  </div>
+  <div class="game-card">
+    <img src="https://raw.githubusercontent.com/PurePro4561/PurePro4561.github.io/main/A86A7867-D2CF-4C2C-AF7C-AF1218BE5D78.jpeg" class="game-image">
+    <div class="game-title">Game 4</div>
+    <div class="game-description">A creative and innovative game for the curious.</div>
+  </div>
+</div>
+
+</body>
+</html>
