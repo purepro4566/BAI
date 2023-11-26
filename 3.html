@@ -1,0 +1,125 @@
+<html>
+<head>
+  <style>
+    /* Define a linear gradient for the body background */
+    body {
+      background: linear-gradient(to right, #f0f0f0, #ffffff);
+      font-family: Arial, sans-serif;
+    }
+
+    /* Define a container for the website content */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Define a logo for the website */
+    .logo {
+      width: 200px;
+      height: 100px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    /* Define a navigation bar for the website */
+    .nav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Define the style for each navigation item */
+    .nav-item {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      background: linear-gradient(to right, #ffcccc, #ff9999);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Define a hover effect for each navigation item */
+    .nav-item:hover {
+      background: linear-gradient(to right, #ff9999, #ff6666);
+      transform: scale(1.1);
+      transition: all 0.3s;
+    }
+
+    /* Define a main section for the website content */
+    .main {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      margin-top: 20px;
+    }
+
+    /* Define a card for each game */
+    .card {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Define an image for each game */
+    .card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* Define a title for each game */
+    .card-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+      color: white;
+      font-size: 18px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Add a logo for the website -->
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <!-- Add a navigation bar for the website -->
+    <ul class="nav">
+      <li><a href="#" class="nav-item">Home</a></li>
+      <li><a href="#" class="nav-item">Games</a></li>
+      <li><a href="#" class="nav-item">Categories</a></li>
+      <li><a href="#" class="nav-item">Contact</a></li>
+    </ul>
+
+    <!-- Add a main section for the website content -->
+    <div class="main">
+      <!-- Add a card for each game -->
+      <div class="card">
+        <img src="game1.png" alt="Game 1" class="card-image">
+        <div class="card-title">Game 1</div>
+      </div>
+      <div class="card">
+        <img src="game2.png" alt="Game 2" class="card-image">
+        <div class="card-title">Game 2</div>
+      </div>
+      <div class="card">
+        <img src="game3.png" alt="Game 3" class="card-image">
+        <div class="card-title">Game 3</div>
+      </div>
+      <div class="card">
+        <img src="game4.png" alt="Game 4" class="card-image">
+        <div class="card-title">Game 4</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
