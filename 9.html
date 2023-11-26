@@ -195,7 +195,9 @@ body {
     }
   });
   searchInput.addEventListener("input", function() {
-  if (searchInput.length > 0) { let searchValue = searchInput.value.toLowerCase(); alert("1 - "+searchValue);
+   alert("0");
+    let searchValue = searchInput.value.toLowerCase(); alert("1 - "+searchValue);
+    if (searchInput.length > 0) { 
     // Loop through the game cards
     for (let i = 0; i < gameCards.length; i++) { alert("2");
       // Get the data-title attribute of each game card
