@@ -185,7 +185,7 @@ body {
       // Get the data-title attribute of each game card
       let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase();
       // If the search value matches the game title
-      if (searchValue == gameTitle) {
+      if (gameTitle.includes(searchValue)) {
         // Show the game card
         gameCards[i].style.display = "block";
       } else {
