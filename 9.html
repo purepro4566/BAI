@@ -194,6 +194,25 @@ body {
       }
     }
   });
+searchInput.oninput {
+  if (searchInput.length > 0) {
+      // Get the value of the search input
+      let searchValue = searchInput.value.toLowerCase();
+    // Loop through the game cards
+    for (let i = 0; i < gameCards.length; i++) {
+      // Get the data-title attribute of each game card
+      let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase();
+      // If the search value matches the game title
+      if (gameTitle.includes(searchValue)) {
+        // Show the game card
+        gameCards[i].style.display = "block";
+      } else {
+        // Hide the game card
+        gameCards[i].style.display = "none";
+      }
+    }
+  }
+}
 </script>
 
 </body>
