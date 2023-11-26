@@ -194,7 +194,7 @@ body {
       }
     }
   });
-searchInput.oninput {
+  searchInput.addEventListener("input", function() {
   if (searchInput.length > 0) {
       // Get the value of the search input
       let searchValue = searchInput.value.toLowerCase();
@@ -212,7 +212,7 @@ searchInput.oninput {
       }
     }
   }
-}
+})
 </script>
 
 </body>
