@@ -195,15 +195,13 @@ body {
     }
   });
   searchInput.addEventListener("input", function() {
-  if (searchInput.length > 0) {
-      // Get the value of the search input
-      let searchValue = searchInput.value.toLowerCase();
+  if (searchInput.length > 0) { let searchValue = searchInput.value.toLowerCase(); alert("1 - "+searchValue);
     // Loop through the game cards
-    for (let i = 0; i < gameCards.length; i++) {
+    for (let i = 0; i < gameCards.length; i++) { alert("2");
       // Get the data-title attribute of each game card
-      let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase();
+      let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase(); alert("3");
       // If the search value matches the game title
-      if (gameTitle.includes(searchValue)) {
+      if (gameTitle.includes(searchValue)) { alert("4");
         // Show the game card
         gameCards[i].style.display = "block";
       } else {
