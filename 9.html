@@ -201,11 +201,10 @@ body {
     if (searchValue.length > 0) { 
       // Loop through the game cards
       for (let i = 0; i < gameCards.length; i++) { 
-        alert("2");
         // Get the data-title attribute of each game card
-        let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase(); alert("3");
+        let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase();
         // If the search value matches the game title
-        if (gameTitle.includes(searchValue)) { alert("4");
+        if (gameTitle.includes(searchValue)) {
           // Show the game card
           gameCards[i].style.display = "block";
         } else {
