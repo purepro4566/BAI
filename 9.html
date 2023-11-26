@@ -1,0 +1,200 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(45deg, lime, aqua);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-box {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+.search-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  background: white;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  transform: scale(1.1);
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.game-card {
+  width: 200px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.game-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.game-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+}
+
+.game-description {
+  font-size: 16px;
+  color: gray;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="search-container">
+  <input type="text" class="search-box" placeholder="Search for mobile games..." id="search-input">
+  <button class="search-button" id="search-button">🔍</button>
+</div>
+
+<div class="game-container" id="game-container">
+  <div class="game-card" data-title="Game 1">
+    <img src="https://raw.githubusercontent.com/PurePro4561/PurePro4561.github.io/main/A86A7867-D2CF-4C2C-AF7C-AF1218BE5D78.jpeg" class="game-image">
+    <div class="game-title">Game 1</div>
+    <div class="game-description">A fun and addictive game for everyone.</div>
+  </div>
+  <div class="game-card" data-title="Game 2">
+    <img src="https://raw.githubusercontent.com/PurePro4561/PurePro4561.github.io/main/A86A7867-D2CF-4C2C-AF7C-AF1218BE5D78.jpeg" class="game-image">
+    <div class="game-title">Game 2</div>
+    <div class="game-description">A challenging and rewarding game for the brave.</div>
+  </div>
+  <div class="game-card" data-title="Game 3">
+    <img src="https://raw.githubusercontent.com/PurePro4561/PurePro4561.github.io/main/A86A7867-D2CF-4C2C-AF7C-AF1218BE5D78.jpeg" class="game-image">
+    <div class="game-title">Game 3</div>
+    <div class="game-description">A relaxing and soothing game for the stressed.</div>
+  </div>
+  <div class="game-card" data-title="Game 4">
+    <img src="https://raw.githubusercontent.com/PurePro4561/PurePro4561.github.io/main/A86A7867-D2CF-4C2C-AF7C-AF1218BE5D78.jpeg" class="game-image">
+    <div class="game-title">Game 4</div>
+    <div class="game-description">A creative and innovative game for the curious.</div>
+  </div>
+  <!-- Add 12 more game cards with different images and titles -->
+  <div class="game-card" data-title="Game 5">
+    <img src="game5.png" class="game-image">
+    <div class="game-title">Game 5</div>
+    <div class="game-description">A fast and furious game for the adrenaline seekers.</div>
+  </div>
+  <div class="game-card" data-title="Game 6">
+    <img src="game6.png" class="game-image">
+    <div class="game-title">Game 6</div>
+    <div class="game-description">A strategic and tactical game for the smart and cunning.</div>
+  </div>
+  <div class="game-card" data-title="Game 7">
+    <img src="game7.png" class="game-image">
+    <div class="game-title">Game 7</div>
+    <div class="game-description">A musical and rhythmic game for the artistic and expressive.</div>
+  </div>
+  <div class="game-card" data-title="Game 8">
+    <img src="game8.png" class="game-image">
+    <div class="game-title">Game 8</div>
+    <div class="game-description">A social and interactive game for the friendly and outgoing.</div>
+  </div>
+  <div class="game-card" data-title="Game 9">
+    <img src="game9.png" class="game-image">
+    <div class="game-title">Game 9</div>
+    <div class="game-description">A educational and informative game for the curious and eager.</div>
+  </div>
+  <div class="game-card" data-title="Game 10">
+    <img src="game10.png" class="game-image">
+    <div class="game-title">Game 10</div>
+    <div class="game-description">A humorous and witty game for the funny and clever.</div>
+  </div>
+  <div class="game-card" data-title="Game 11">
+    <img src="game11.png" class="game-image">
+    <div class="game-title">Game 11</div>
+    <div class="game-description">A spooky and scary game for the brave and daring.</div>
+  </div>
+  <div class="game-card" data-title="Game 12">
+    <img src="game12.png" class="game-image">
+    <div class="game-title">Game 12</div>
+    <div class="game-description">A magical and fantastical game for the imaginative and adventurous.</div>
+  </div>
+  <div class="game-card" data-title="Game 13">
+    <img src="game13.png" class="game-image">
+    <div class="game-title">Game 13</div>
+    <div class="game-description">A mysterious and suspenseful game for the inquisitive and detective.</div>
+  </div>
+  <div class="game-card" data-title="Game 14">
+    <img src="game14.png" class="game-image">
+    <div class="game-title">Game 14</div>
+    <div class="game-description">A romantic and sentimental game for the loving and caring.</div>
+  </div>
+  <div class="game-card" data-title="Game 15">
+    <img src="game15.png" class="game-image">
+    <div class="game-title">Game 15</div>
+    <div class="game-description">A sporty and competitive game for the athletic and energetic.</div>
+  </div>
+  <div class="game-card" data-title="Game 16">
+    <img src="game16.png" class="game-image">
+    <div class="game-title">Game 16</div>
+    <div class="game-description">A nostalgic and retro game for the old-school and classic.</div>
+  </div>
+</div>
+
+<script>
+  // Get the elements from the document
+  let searchInput = document.getElementById("search-input");
+  let searchButton = document.getElementById("search-button");
+  let gameContainer = document.getElementById("game-container");
+  let gameCards = document.querySelectorAll(".game-card");
+
+  // Add an event listener to the search button
+  searchButton.addEventListener("click", function() {
+    // Get the value of the search input
+    let searchValue = searchInput.value.toLowerCase();
+    // Loop through the game cards
+    for (let i = 0; i < gameCards.length; i++) {
+      // Get the data-title attribute of each game card
+      let gameTitle = gameCards[i].getAttribute("data-title").toLowerCase();
+      // If the search value matches the game title
+      if (searchValue == gameTitle) {
+        // Show the game card
+        gameCards[i].style.display = "block";
+      } else {
+        // Hide the game card
+        gameCards[i].style.display = "none";
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
